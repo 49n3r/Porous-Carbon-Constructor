@@ -26,9 +26,9 @@ This script creates porous carbon model with desired porosity and pore distribut
 
 As described in our paper, our method to determine the pore distribution from the pre-defined porosity $\xi_i$ is obtained as:
 
-\begin{equation}
+$$
 \xi_i = \sum_{n=1}^N \frac{v_n}{V}
-\end{equation}
+$$
 
 \noindent where $N$, $\nu_n$, and $V$ are the total number of pores, the pore volume sampled from a uniform distribution, and the bounding box volume, respectively.
 
