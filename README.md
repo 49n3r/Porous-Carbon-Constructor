@@ -1,6 +1,7 @@
 # Porous-Carbon-Constructor
-App to construct porous carbon models
-**POROUS CARBON CREATOR ALGORITHM**
+Algorithm to construct porous carbon models (use the Jupyter Notebook script, the .py is currently being written to build this into a Streamlit App)
+
+**POROUS CARBON CONSTRUCTOR ALGORITHM**
 
 ><span style="color:brown">`Associated Publication:` <br> Atomistic-to-Continuum Modeling of Carbon Foam: A New Approach to Finite Element Simulation <br>
 C. Ugwumadu, W. Downs, R. Thapa, R. Olson III, M. Ali, J. Trembly, Y. Al-Majali and D. A. Drabolda </span>
