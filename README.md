@@ -7,7 +7,7 @@ Algorithm to construct porous carbon models (use the Jupyter Notebook script, th
 C. Ugwumadu, W. Downs, R. Thapa, R. Olson III, M. Ali, J. Trembly, Y. Al-Majali and D. A. Drabolda </span>
 
 
-This script creates porous carbon model with desired porosity and pore distribution, which is then optimized using molecular dynamics simulation
+This script creates a porous carbon model with desired porosity and pore distribution, which is then optimized using molecular dynamics simulation
 
 
 **Authors Information** 
@@ -30,7 +30,7 @@ $$
 \xi_i = \sum_{n=1}^N \frac{v_n}{V}
 $$
 
-\noindent where $N$, $\nu_n$, and $V$ are the total number of pores, the pore volume sampled from a uniform distribution, and the bounding box volume, respectively.
+Where $N$, $\nu_n$, and $V$ are the total number of pores, the pore volume sampled from a uniform distribution, and the bounding box volume, respectively.
 
 ## The Main Program
 
@@ -42,7 +42,7 @@ At the end of running this script, 3 files will be created.
 2. A POSCAR file containing the pores without the atoms
 3. An extended *.xyz* file containing atoms and pores, for visualization in an atom visualizer like `OVITO`.
 
-<font color=red> Please note that </font> the sizes of the pores in the *.xyz* file has been scaled by half so that they are visually presentable.
+<font color=red> Please note that </font> the sizes of the pores in the *.xyz* file have been scaled by half to be visually presentable.
 
-**Eqn. (1)** has been implemented in the `poreCreator` function below. Check and adjust the (default) parameter arguments accordingly
+**The equation above** has been implemented in the `poreCreator` function below. Check and adjust the (default) parameter arguments accordingly
 
