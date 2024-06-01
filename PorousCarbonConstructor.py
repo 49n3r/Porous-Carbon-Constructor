@@ -161,7 +161,6 @@ def poreCreator(max_pore_size, box, porosity, num_pores,  pore_dist_kind = 3):
    
         if poreVolume_sum > porosity_threshold:
             restarts += 1
-            print(f"Number of restarts = {restarts}", end='\r')
             poreVolume_sum = 0
             i = 0
             poreRadii_list = []
