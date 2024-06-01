@@ -220,7 +220,7 @@ with col2:
 
         pos = np.zeros([st.session_state.num_atoms+st.session_state.num_pores,3],float)   ## A list that takes in the position of the atoms and pores
 
-        st.write(f"Number of pores and atoms: {np.shape(pos)[0]} in {np.shape(pos)[1]} dimensions")
+        #st.write(f"Number of pores and atoms: {np.shape(pos)[0]} in {np.shape(pos)[1]} dimensions")
         
         box = st.session_state.box
         pore_overlap = st.session_state.pore_overlap
@@ -306,7 +306,7 @@ with col2:
          ################################################################################################
 
         my_bar.empty()
-        with st.spinner("Preparing file for download. Please wait..."):
+        with st.spinner("Preparing POSCAR file for download. Please wait..."):
             time.sleep(5)
 
     
@@ -333,6 +333,7 @@ Direct\n{final_output}")
 
 
         st.success('Done!')
+        st.info('IMPORTANT! The pores are represented by oxygen (O) in the POTCAR file below.', icon="ℹ️")
 
         if st.download_button(label="Download POSCAR",data=st.session_state.txt1, file_name=st.session_state.atoms_vasp,on_click=disable, args=(True,)):
             st.write("Download Complete.")
