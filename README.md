@@ -1,16 +1,13 @@
 # Porous-Carbon-Constructor
-Algorithm to construct porous carbon models (use the Jupyter Notebook script, the .py is currently being written to build this into a Streamlit App)
+Algorithm to construct porous carbon models. The .py file is used to deploy the `streamlit` app online. The .ipynb file is useful if you want to look at the codes without worrying about `streamlit` functionalities. This script creates a porous carbon model with desired porosity and pore distribution, which is then optimized using molecular dynamics simulation
 
 **POROUS CARBON CONSTRUCTOR ALGORITHM**
 
 ><span style="color:brown">`Associated Publication:` <br> Atomistic-to-Continuum Modeling of Carbon Foam: A New Approach to Finite Element Simulation <br>
-C. Ugwumadu, W. Downs, R. Thapa, R. Olson III, M. Ali, J. Trembly, Y. Al-Majali and D. A. Drabolda </span>
+C. Ugwumadu, W. Downs, C. O'Brien, R. Thapa, R. Olson III, M. Ali, J. Trembly, Y. Al-Majali and D. A. Drabolda </span>
 
 
-This script creates a porous carbon model with desired porosity and pore distribution, which is then optimized using molecular dynamics simulation
-
-
-**Authors Information** 
+**Algorithm Authors Information** 
 
 **Name**:: C. Ugwumadu, R. Thapa, and D. A. Drabold
 
