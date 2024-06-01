@@ -254,7 +254,7 @@ with col2:
             ct += 1
     
       
-        st.write("PORES HAVE ALL BEEN CREATED !!!")
+        st.write("ALL PORES CREATED")
 
         ### Uncomment for debugging
         #print(pos[:num_pores])
