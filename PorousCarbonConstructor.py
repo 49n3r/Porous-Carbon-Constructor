@@ -142,7 +142,7 @@ def poreCreator(max_pore_size, box, porosity, num_pores,  pore_dist_kind = 3):
               
             if poreVolume_sum > porosity:
                 restarts += 1
-                print(f"Number of restarts = {restarts}", end = '\r')
+                #print(f"Number of restarts = {restarts}", end = '\r')
                 poreVolume_sum = 0
                 i = 0
                 poreRadii_list = []
@@ -150,12 +150,12 @@ def poreCreator(max_pore_size, box, porosity, num_pores,  pore_dist_kind = 3):
             
             # Ensure the last pore sums to the desired porosity
             if i == num_pores-1:
-                print(f"Sampled up to {i} pores. Current Porosity is: {poreVolume_sum:.2f}")
+                #print(f"Sampled up to {i} pores. Current Porosity is: {poreVolume_sum:.2f}")
                 last_poreVolume = abs((porosity - poreVolume_sum)) * box**3
-                print(f"Added porosity fraction is {(last_poreVolume/box**3):.2f}")
+                #print(f"Added porosity fraction is {(last_poreVolume/box**3):.2f}")
                 poreRadii_list.append(last_poreVolume**(1/3))
                 poreVolume_sum += last_poreVolume/box**3
-                print(f"Added last pore. Final porosity is: {poreVolume_sum:.2f}")
+                #print(f"Added last pore. Final porosity is: {poreVolume_sum:.2f}")
                 break
             
    
@@ -165,9 +165,9 @@ def poreCreator(max_pore_size, box, porosity, num_pores,  pore_dist_kind = 3):
             i = 0
             poreRadii_list = []
         
-    print()
-    print(f"                 *** Pore Radii List for {len(poreRadii_list)} Pores ***")
-    print(np.round(poreRadii_list,2))
+    #print()
+    #print(f"                 *** Pore Radii List for {len(poreRadii_list)} Pores ***")
+    #print(np.round(poreRadii_list,2))
     
     return name, poreRadii_list
 ##########################################################################################################
@@ -188,7 +188,7 @@ with col1:
         st.session_state.box, volume = boxSize(st.session_state.density)
         st.session_state.name, st.session_state.poreRadii_list = poreCreator(st.session_state.max_pore_size, st.session_state.box, st.session_state.porosity, st.session_state.num_pores, pore_dist_kind)
 
-        #prints
+       
         st.write(f"The box lenght is {st.session_state.box:.2f} \u212B")
         st.write(f"Pore Distribution: {st.session_state.name}")
         st.text(f"Pore Radii List:\n {np.round(st.session_state.poreRadii_list, 2)}")
@@ -233,7 +233,7 @@ with col2:
         rnd = lambda i: i-round(i/box)*box  ## This makes rnd a function that takes i and perform i - round(i/box)*box
         vec_rnd = np.vectorize(rnd)         ## takes  a function and gives result in a callable vectorised function
 
-        print ("Now creating the center of the foams")
+        #print ("Now creating the center of the foams")
 
         while ct < num_pores:
 
@@ -260,7 +260,7 @@ with col2:
         #print(pos[:num_pores])
         ###########################
 
-        print()
+        #print()
         with st.spinner("Creating carbon atoms. Takes time, please wait.)"):
             my_bar = st.progress(0, text="Progress Status.")
 
@@ -302,7 +302,7 @@ with col2:
     
                 ct +=1
                 my_bar.progress(ct/(num_atoms+num_pores), text="Progress Status.")         
-                print (f"Placing Atom number {ct-num_pores} of {num_atoms}", end='\r')
+                #print (f"Placing Atom number {ct-num_pores} of {num_atoms}", end='\r')
          ################################################################################################
 
         my_bar.empty()
