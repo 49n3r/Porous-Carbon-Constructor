@@ -333,7 +333,7 @@ Direct\n{final_output}")
 
 
         st.success('Done!')
-        st.info('IMPORTANT! The pores are represented by oxygen (O) in the POTCAR file below.', icon="ℹ️")
+        st.info(f'IMPORTANT! The pores are labelled as oxygen (O) atoms in the first {st.session_state.num_pores} lines in the POSCAR file below.', icon="ℹ️")
 
         if st.download_button(label="Download POSCAR",data=st.session_state.txt1, file_name=st.session_state.atoms_vasp,on_click=disable, args=(True,)):
             st.write("Download Complete.")
