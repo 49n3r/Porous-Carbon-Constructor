@@ -9,7 +9,13 @@ import plotly.express as px
 st.title("Porous Carbon Constructor")
 logo_url = "https://chinonsougwumadu.com/wp-content/uploads/2024/05/microsoftteams-image-17.jpg"
 st.sidebar.image(logo_url)
-st.sidebar.link_button("About Us", "https://daviddrabold.com/")
+
+col3, col4 = st.columns(2)
+with col3:
+    st.sidebar.link_button("About Us", "https://daviddrabold.com/")
+with col4:
+    st.sidebar.link_button("Help", "https://daviddrabold.com/publications/")
+    
 st.sidebar.markdown("## Paramater initialization")
 
 
