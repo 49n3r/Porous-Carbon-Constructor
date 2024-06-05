@@ -12,7 +12,7 @@ st.sidebar.image(logo_url)
 
 
 st.sidebar.link_button("About Us", "https://daviddrabold.com/")
-st.sidebar.link_button("Help", "https://daviddrabold.com/publications/")
+#st.sidebar.link_button("Help", "https://daviddrabold.com/publications/")
 st.sidebar.markdown("## Paramater initialization")
 
 
