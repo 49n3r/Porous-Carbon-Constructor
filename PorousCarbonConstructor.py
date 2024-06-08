@@ -6,6 +6,10 @@ import time
 import plotly
 import plotly.express as px
 
+st.set_page_config(
+    page_title="MTG-OU",
+    page_icon="https://chinonsougwumadu.com/wp-content/uploads/2024/05/microsoftteams-image-17.jpg")
+
 st.title("Porous Carbon Constructor")
 logo_url = "https://chinonsougwumadu.com/wp-content/uploads/2024/05/microsoftteams-image-17.jpg"
 st.sidebar.image(logo_url)
