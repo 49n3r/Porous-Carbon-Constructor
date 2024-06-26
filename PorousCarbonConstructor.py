@@ -15,7 +15,7 @@ logo_url = "https://chinonsougwumadu.com/wp-content/uploads/2024/05/microsofttea
 st.sidebar.image(logo_url)
 
 
-st.sidebar.link_button("About Us", "https://daviddrabold.com/")
+st.sidebar.link_button("About Us","https://mtg-ohiou.streamlit.app/")
 #st.sidebar.link_button("Help", "https://daviddrabold.com/publications/")
 st.sidebar.markdown("## Paramater initialization")
 
